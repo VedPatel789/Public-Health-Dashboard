@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Country Health Comparator</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌍 Public Health Dashboard</h1>
+</header>
+
+<div class="container">
+
+  <!-- SEARCH SECTION -->
+  <section class="box">
+    <h2>🔎 Search Country</h2>
+
+    <input id="searchInput" placeholder="Enter country name">
+    <button onclick="searchCountry()">Search</button>
+
+    <div id="searchResult" class="result"></div>
+  </section>
+
+  <!-- COMPARE SECTION -->
+  <section class="box">
+    <h2>⚖️ Compare Countries</h2>
+
+    <select id="country1"></select>
+    <select id="country2"></select>
+
+    <button onclick="compare()">Compare</button>
+
+    <canvas id="chart"></canvas>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
